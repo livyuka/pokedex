@@ -1,0 +1,146 @@
+.normal {
+    background-color: #c4c4b0
+}
+
+.fire {
+    background-color: #f3914b
+}
+
+.water {
+    background-color: #668fe8
+}
+
+.electric {
+    background-color: #F7D02C
+}
+
+.grass {
+    background-color: #7fc258
+}
+
+.ice {
+    background-color: #98d5d7
+}
+
+.fighting {
+    background-color: #C22E28
+}
+
+.poison {
+    background-color: #bd57bc
+}
+
+.ground {
+    background-color: #d8bf7f
+}
+
+.flying {
+    background-color: #A98FF3
+}
+
+.psychic {
+    background-color: #f77098
+}
+
+.bug {
+    background-color: #b1c32c
+}
+
+.rock {
+    background-color: #a39966
+}
+
+.ghost {
+    background-color: #735797
+}
+
+.dragon {
+    background-color: #a384f2
+}
+
+.dark {
+    background-color: #725847
+}
+
+.steel {
+    background-color: #B9b7cf
+}
+
+.fairy {
+    background-color: #f9aec7
+}
+
+
+.pokemons {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.pokemon {
+    margin: 0.5rem;
+    padding: 2rem 1rem;
+    color: white;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.pokemon .number {
+    color: #000;
+    opacity: .4;
+    text-align: right;
+    font-size: .625rem;
+}
+
+.pokemon .name {
+    margin-bottom: .25rem;
+    text-transform: capitalize;
+}
+
+.pokemon .detail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pokemon .detail .types {
+    list-style: none;
+}
+
+.pokemon .type {
+    width: 50px;
+    padding: .25rem .5rem;
+    border-radius: 1rem;
+    font-size: .625rem;
+    margin: .25rem 0;
+    filter: brightness(0.9);
+    text-align: center;
+}
+
+.pokemon .detail img {
+    max-width: 100%;
+    height: 70px;
+}
+
+@media screen and (min-width: 380px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media screen and (min-width: 576px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+}
